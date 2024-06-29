@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        button {
-            width: 500px;
-            height: 200px;
-            background: green;
-            color: white;
-            font-size: 50px;
-            transition: .2s ease;
-        }
-
-        .aboba {
-            width: 200px;
-            height: 50px;
-        }
-
-        span {
-            font-size: 30px;
-            color: green;
-            opacity: 0;
-            transition: .5s ease-in-out;
-        }
-
-        .opa {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="lgbt">Кнопка</button>
-    <span>Привет</span>
-    <script src="index.js"></script>
+    <div id="chat_messages"></div>
+    <input id="user_name" placeholder="Твоё имя" type="text">
+    <div class="form">
+        <input id="input_message" placeholder="Сообщения" type="text" name="" id="">
+        <button id="send_message">Отправить</button>
+    </div>
+    <script src="chat.js" type="module"></script>
 </body>
 </html>
